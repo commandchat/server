@@ -3,7 +3,7 @@ use std::net::SocketAddr;
 
 pub fn get() -> SocketAddr {
 	lazy_static! {
-		static ref ORIGIN: SocketAddr = SocketAddr::from(([127, 0, 0, 1], port::get()));
+		static ref ORIGIN: SocketAddr = SocketAddr::from(([0, 0, 0, 0], port::get()));
 	}
 
 	*ORIGIN
